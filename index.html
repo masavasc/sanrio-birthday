@@ -13,6 +13,7 @@ form{background:var(--soft);border:1px solid var(--line);border-radius:20px;padd
 select,button{font:inherit}select{width:100%;font-size:1.3rem;font-weight:700;min-height:54px;padding:8px 12px;background:white;color:var(--ink);border:1px solid #9dbed8;border-radius:12px;cursor:pointer}button{cursor:pointer;border:1px solid transparent;border-radius:12px;min-height:44px;padding:9px 16px;color:var(--blue);background:white;font-weight:700}button:hover{background:#dcefff}button:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #145ba4;outline-offset:3px}.search{background:var(--blue);color:white;width:100%;margin-top:16px;min-height:50px}.search:hover{background:#175783}.today{border-color:var(--line);min-height:54px;white-space:nowrap}.hint{font-size:.875rem;color:var(--muted);margin:10px 0 0;min-height:1.5em}
 details{margin-top:14px}summary{cursor:pointer;color:var(--blue);font-size:.875rem;font-weight:700;padding:5px 0}.day-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin-top:12px}.day-grid button{padding:6px 0;min-width:0;border-color:var(--line)}.day-grid [aria-pressed="true"]{background:var(--blue);color:white}
 .result-area{margin-top:28px;border-top:1px solid var(--line);padding-top:24px}.result-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}h2{font-size:1.1rem;margin:0}.count{font-size:.875rem;color:var(--blue);background:var(--soft);padding:3px 12px;border-radius:20px;white-space:nowrap}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:white;min-width:0}.portrait{height:180px;display:flex;align-items:center;justify-content:center;background:#f5faff;padding:16px}.portrait img{display:block;max-width:100%;width:100%;height:100%;object-fit:contain}.fallback{font-size:.875rem;color:var(--muted);text-align:center}.card-copy{padding:16px}.card h3{font-size:1.05rem;margin:0 0 4px;overflow-wrap:anywhere;line-height:1.55}.series{font-size:.8rem;color:var(--muted);margin:0 0 10px;overflow-wrap:anywhere}.source{font-size:.8rem;color:var(--blue);text-underline-offset:3px}.empty{text-align:center;padding:30px 12px;background:var(--soft);border-radius:18px;color:var(--muted)}.empty p{margin:0}.empty p+p{font-size:.875rem;margin-top:8px}footer{margin-top:24px;color:var(--muted);font-size:.75rem;text-align:center}footer a{color:inherit}[hidden]{display:none!important}
+.fortune{margin-top:22px;padding:22px;border:1px solid #9dbed8;border-radius:20px;background:linear-gradient(145deg,#f7fbff,#eaf6ff);box-shadow:0 8px 24px #145ba412}.fortune-kicker{margin:0 0 6px;color:var(--blue);font-size:.8rem;font-weight:700;letter-spacing:.06em}.fortune-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.zodiac{padding:3px 10px;border-radius:999px;background:#fff;color:var(--blue);font-size:.8rem;font-weight:700;white-space:nowrap}.fortune-status{margin:18px 0 8px;color:#175783;font-size:1.55rem;font-weight:800;letter-spacing:.04em}.fortune-message{margin:0 0 18px}.fortune-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0}.fortune-details div{padding:10px 12px;border-radius:12px;background:#fff}.fortune-details dt{font-size:.75rem;color:var(--muted)}.fortune-details dd{margin:2px 0 0;font-weight:700}.fortune-match{display:flex;align-items:center;gap:14px;margin-top:14px;padding:12px;border-radius:14px;background:#fff}.fortune-match img{width:66px;height:66px;object-fit:contain;flex:0 0 auto}.fortune-match-label{margin:0;color:var(--muted);font-size:.75rem}.fortune-match-name{margin:1px 0 0;font-weight:800}.fortune-match-series{margin:1px 0 0;color:var(--muted);font-size:.8rem}.fortune-note{display:block;margin-top:14px;color:var(--muted);font-size:.75rem}
 @media(max-width:480px){main{margin:16px 12px;padding:22px 16px;border-radius:22px}form{padding:16px}.date-row{gap:8px}.today{padding:8px 10px}.portrait{height:145px;padding:12px}.card-copy{padding:12px}.cards{gap:10px}}
 @media(max-width:340px){.cards{grid-template-columns:1fr}.date-row{flex-wrap:wrap}.today{width:100%}}
 .header-characters{display:grid;grid-template-columns:repeat(4,1fr);align-items:end;gap:8px;max-width:420px;margin:0 auto 16px}.character-item{position:relative;min-width:0;border-radius:14px;cursor:help}.character-item:focus-visible{outline:3px solid #145ba4;outline-offset:3px}.header-character{display:block;width:100%;height:94px;object-fit:contain;transition:transform .18s ease}.header-character:not(.header-kitty){filter:saturate(1.5) contrast(1.12) brightness(.97)}.character-item:hover .header-character,.character-item:focus .header-character{transform:translateY(-3px)}.birthday-tip{position:absolute;z-index:5;left:50%;top:calc(100% + 8px);width:max-content;max-width:150px;transform:translate(-50%,-4px);padding:8px 12px;border:1px solid #9dbed8;border-radius:12px;background:#fff;color:var(--ink);box-shadow:0 7px 20px #145ba426;font-size:.8rem;font-weight:700;line-height:1.45;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s ease,transform .16s ease}.birthday-tip::before{content:"";position:absolute;left:50%;top:-6px;width:10px;height:10px;background:#fff;border-left:1px solid #9dbed8;border-top:1px solid #9dbed8;transform:translateX(-50%) rotate(45deg)}.character-item:hover .birthday-tip,.character-item:focus .birthday-tip{opacity:1;visibility:visible;transform:translate(-50%,0)}.character-item:first-child .birthday-tip{left:0;transform:translate(0,-4px)}.character-item:first-child:hover .birthday-tip,.character-item:first-child:focus .birthday-tip{transform:translate(0,0)}.character-item:first-child .birthday-tip::before{left:28%}.character-item:last-child .birthday-tip{left:auto;right:0;transform:translate(0,-4px)}.character-item:last-child:hover .birthday-tip,.character-item:last-child:focus .birthday-tip{transform:translate(0,0)}.character-item:last-child .birthday-tip::before{left:72%}header{padding-top:4px}.source{font-size:.875rem}
@@ -30,7 +31,7 @@ details{margin-top:14px}summary{cursor:pointer;color:var(--blue);font-size:.875r
 <details><summary>日を一覧から選ぶ</summary><div class="day-grid" id="day-grid" aria-label="日を選択"></div></details>
 <button type="submit" class="search">この誕生日で検索</button>
 </form>
-<section class="result-area" aria-label="検索結果"><div class="result-heading"><h2 id="result-title">誕生日を選んで検索</h2><span class="count" id="count" hidden></span></div><p id="announcement" role="status" class="hint" hidden></p><div id="result"><div class="empty"><p>あなたと同じ日に生まれたのは、だれ？</p><p>月と日を選んで、検索ボタンを押してください。</p></div></div></section>
+<section class="result-area" aria-label="検索結果"><div class="result-heading"><h2 id="result-title">誕生日を選んで検索</h2><span class="count" id="count" hidden></span></div><p id="announcement" role="status" class="hint" hidden></p><div id="result"><div class="empty"><p>あなたと同じ日に生まれたのは、だれ？</p><p>月と日を選んで、検索ボタンを押してください。</p></div></div><aside class="fortune" id="fortune" aria-labelledby="fortune-title" hidden><p class="fortune-kicker" id="fortune-date"></p><div class="fortune-heading"><h2 id="fortune-title">今日のバースデー占い</h2><span class="zodiac" id="fortune-zodiac"></span></div><p class="fortune-status" id="fortune-status"></p><p class="fortune-message" id="fortune-message"></p><dl class="fortune-details"><div><dt>ラッキーカラー</dt><dd id="fortune-color"></dd></div><div><dt>ラッキーアイテム</dt><dd id="fortune-item"></dd></div></dl><div class="fortune-match"><img id="fortune-match-image" alt="" referrerpolicy="no-referrer" decoding="async"><div><p class="fortune-match-label">今日の相性キャラクター</p><p class="fortune-match-name" id="fortune-match-name"></p><p class="fortune-match-series" id="fortune-match-series"></p></div></div><small class="fortune-note">占いと相性キャラクターは、お楽しみとしてご覧ください。</small></aside></section>
 <footer>非公式の検索アプリです。誕生日は登録データに基づきます。<br>画像・キャラクターの権利は各権利者に帰属します。<br>画像出典：<a href="https://www.sanrio.co.jp/characters/" target="_blank" rel="noopener noreferrer">サンリオ公式サイト</a>（画像の表示にはインターネット接続が必要です）</footer>
 <noscript>このアプリを使うには、ブラウザーのJavaScriptを有効にしてください。</noscript>
 </main>
@@ -3189,6 +3190,7 @@ const result=document.getElementById('result');
 const title=document.getElementById('result-title');
 const count=document.getElementById('count');
 const announcement=document.getElementById('announcement');
+const fortune=document.getElementById('fortune');
 const daysInMonth=m=>[31,29,31,30,31,30,31,31,30,31,30,31][m-1]||0;
 const validDate=(m,d)=>Number.isInteger(m)&&Number.isInteger(d)&&d>=1&&d<=daysInMonth(m);
 function make(tag,text,cls){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el;}
@@ -3202,7 +3204,35 @@ function updateDays(){
  daySelect.value=String(Math.min(previous,last));syncGrid();
  hint.textContent=previous>last?monthSelect.value+'月は'+last+'日までのため、'+last+'日に変更しました。':'年の入力は不要です。2月29日も選べます。';
 }
-function markPending(){title.textContent='誕生日を選んで検索';count.hidden=true;announcement.hidden=true;result.replaceChildren();const box=make('div',undefined,'empty');box.append(make('p',monthSelect.value+'月'+daySelect.value+'日を選択中'),make('p','検索ボタンを押すと結果が表示されます。'));result.append(box);}
+function markPending(){title.textContent='誕生日を選んで検索';count.hidden=true;announcement.hidden=true;fortune.hidden=true;result.replaceChildren();const box=make('div',undefined,'empty');box.append(make('p',monthSelect.value+'月'+daySelect.value+'日を選択中'),make('p','検索ボタンを押すと結果が表示されます。'));result.append(box);}
+function zodiacFor(m,d){const md=m*100+d;if(md>=1222||md<=119)return'やぎ座';if(md<=218)return'みずがめ座';if(md<=320)return'うお座';if(md<=419)return'おひつじ座';if(md<=520)return'おうし座';if(md<=621)return'ふたご座';if(md<=722)return'かに座';if(md<=822)return'しし座';if(md<=922)return'おとめ座';if(md<=1023)return'てんびん座';if(md<=1122)return'さそり座';return'いて座';}
+function fortuneNumber(m,d,salt=0){const today=new Date();let value=today.getFullYear()*10000+(today.getMonth()+1)*100+today.getDate();value=Math.imul(value+m*37+d*17+salt*101,2654435761);value^=value>>>16;return value>>>0;}
+function renderFortune(m,d){
+ const levels=[
+  {label:'ここから頑張る',message:'あせらず、小さなことから始めると流れが変わりそう。今日は自分のペースを大切に。'},
+  {label:'もう一息',message:'少し立ち止まって確認すると、うまくいくヒントが見つかりそう。丁寧さが味方です。'},
+  {label:'まずまず',message:'落ち着いて過ごせる一日。いつものことを着実に進めると、よい手応えを感じられそう。'},
+  {label:'良いです',message:'人との会話からうれしい発見がありそう。気になったことには素直に動いてみて。'},
+  {label:'絶好調',message:'新しいことに一歩踏み出す好機。明るい気持ちで動くと、うれしい出来事につながりそう。'}
+ ];
+ const colors=['アクアブルー','スカイブルー','レモンイエロー','コーラルピンク','ミントグリーン','ラベンダー','ホワイト','ネイビー'];
+ const items=['小さなノート','ハンカチ','お気に入りのペン','丸いアクセサリー','温かい飲み物','ポーチ','腕時計','音楽'];
+ const matchNames=['キティ・ホワイト（キティ）','メロディ','キキ＆ララ','シナモン','プリン','ポチャッコ','クロミ','けろっぴ','ばつ丸','ペックル','ハンギョドン（半魚丼）','こぎみゅん','マロンクリーム','サム'];
+ const today=new Date(),level=levels[fortuneNumber(m,d)%levels.length];
+ document.getElementById('fortune-date').textContent=(today.getMonth()+1)+'月'+today.getDate()+'日の運勢';
+ document.getElementById('fortune-zodiac').textContent=zodiacFor(m,d);
+ document.getElementById('fortune-status').textContent=level.label;
+ document.getElementById('fortune-message').textContent=level.message;
+ document.getElementById('fortune-color').textContent=colors[fortuneNumber(m,d,1)%colors.length];
+ document.getElementById('fortune-item').textContent=items[fortuneNumber(m,d,2)%items.length];
+ const match=charData.find(row=>row.name===matchNames[fortuneNumber(m,d,3)%matchNames.length]);
+ const matchImage=document.getElementById('fortune-match-image');
+ document.getElementById('fortune-match-name').textContent=match.name;
+ document.getElementById('fortune-match-series').textContent=match.series;
+ matchImage.alt='今日の相性キャラクター：'+match.name;matchImage.src=match.image;
+ matchImage.onerror=()=>{matchImage.hidden=true;};matchImage.hidden=!match.image;
+ fortune.hidden=false;
+}
 function searchBirthday(){
  const m=Number(monthSelect.value),d=Number(daySelect.value);
  if(!validDate(m,d)){hint.textContent='正しい月と日を選んでください。';return;}
@@ -3210,6 +3240,7 @@ function searchBirthday(){
  title.textContent=m+'月'+d+'日生まれ';count.textContent=rows.length+'件';count.hidden=false;
  announcement.hidden=false;announcement.textContent=rows.length? '同じ誕生日のキャラクターが見つかりました。':'この日のキャラクターは登録されていません。';
  result.replaceChildren();
+ renderFortune(m,d);
  if(!rows.length){const empty=make('div',undefined,'empty');empty.append(make('p','登録データに該当するキャラクターがいません。'),make('p','別の日付でも探してみてください。'));result.append(empty);return;}
  const cards=make('div',undefined,'cards');
  for(const row of rows){
